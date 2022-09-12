@@ -1,0 +1,18 @@
+public class CustomTacoBox implements TacoBox{
+    private int taco;
+
+    public CustomTacoBox(int initialTaco){
+        taco = initialTaco;
+    }
+    @Override
+    public int tacosRemaining() {
+        return taco;
+    }
+
+    @Override
+    public void eat() {
+        if (taco > 0){
+            taco--;
+        }
+    }
+}
